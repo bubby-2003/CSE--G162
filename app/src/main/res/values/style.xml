@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.smt1" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Customize your theme -->
+    </style>
+
+</resources>

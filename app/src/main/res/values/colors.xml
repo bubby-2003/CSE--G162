@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="rich_black">#0D0F11</color>
+    <color name="dark_green">#022221</color>
+    <color name="banla_green">#03624C</color>
+    <color name="mountain_meadown">#2CC29B</color>
+    <color name="caribbean_green">#00F2B1</color>
+    <color name="anti_flash_white">#F1F7F8</color>
+
+    <color name="pine">#063D39</color>
+    <color name="basil">#084F3A</color>
+    <color name="forest">#09554A</color>
+    <color name="frog">#17B19D</color>
+    <color name="mint">#2FA68C</color>
+    <color name="stone">#707D7D</color>
+    <color name="pistachio">#ACECC4</color>
+    <color name="my_primary">#000000</color>
+    <color name="teal_700">#00796B</color>
+
+</resources>

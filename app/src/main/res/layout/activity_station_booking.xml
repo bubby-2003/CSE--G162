@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android/tools"
+    xmlns:tools2="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Station_Booking">
+
+    <!-- Book Station Title -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Station"
+        android:textColor="@color/black"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp" />
+
+    <!-- OSMDroid MapView -->
+    <org.osmdroid.views.MapView
+        android:id="@+id/mapView"
+        android:layout_width="393dp"
+        android:layout_height="447dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView" />
+
+    <!-- Station Details Container -->
+    <LinearLayout
+        android:id="@+id/stationDetailsLayout"
+        android:layout_width="347dp"
+        android:layout_height="203dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/curve2"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mapView">
+
+        <!-- Station Name -->
+        <TextView
+            android:id="@+id/station_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Station Name:"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <!-- Station Location -->
+
+        <!-- Available Slots -->
+        <TextView
+            android:id="@+id/available_slots"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Available Slots:"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <!-- Cost per Charging -->
+        <TextView
+            android:id="@+id/cost_per_charging"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="5dp"
+            android:text="₹:"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="59dp"
+            android:layout_margin="16dp"
+            android:layout_marginBottom="52dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <!-- Book Station Button -->
+            <Button
+                android:id="@+id/bookStationButton"
+                android:layout_width="229dp"
+                android:layout_height="38dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/curve2"
+                android:text="Book Station"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Button Container -->
+</androidx.constraintlayout.widget.ConstraintLayout>

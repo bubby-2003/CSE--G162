@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app2"
+    tools:context=".RegisterPage">
+
+    <!-- Main layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="28dp">
+
+        <!-- Logo and title -->
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            app:srcCompat="@drawable/logo" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EV Charge"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="30sp"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/curve2"
+            android:orientation="vertical"
+            android:padding="28dp">
+
+            <!-- Username -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:text="Email Address"
+                android:textColor="@color/anti_flash_white"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/anti_flash_white" />
+
+            <!-- Password -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:text="Password"
+                android:textColor="@color/anti_flash_white"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="@color/anti_flash_white" />
+
+            <!-- Confirm Password -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="0.7"
+                android:text="Confirm Password"
+                android:textColor="@color/anti_flash_white"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/confirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="@color/anti_flash_white" />
+
+            <!-- Register button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/registerButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/curve2"
+                android:text="Register"
+                android:textColor="@color/rich_black"
+                app:cornerRadius="32dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Registration form -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="28dp"
+        android:layout_marginBottom="-20dp"
+        android:id="@+id/card_view">
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

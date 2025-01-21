@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="33"
+        tools:overrideLibrary="androidx.activity" />
+    <!-- Permissions for Internet and Location access -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="EV Charge"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.smt1"
+        tools:targetApi="31">
+        <activity
+            android:name=".LogSec"
+            android:exported="false" />
+        <activity
+            android:name=".Pres_info"
+            android:exported="false" />
+        <activity
+            android:name=".AddCard"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterPage"
+            android:exported="true" />
+        <activity
+            android:name=".Setting"
+            android:exported="false" />
+        <activity
+            android:name=".Aboutus"
+            android:exported="false" />
+        <activity
+            android:name=".More"
+            android:exported="false" />
+        <activity
+            android:name=".l1"
+            android:exported="false" /> <!-- Declare all activities here -->
+        <activity
+            android:name=".Fin_charge"
+            android:exported="false" />
+        <activity
+            android:name=".Payment"
+            android:exported="false" />
+        <activity
+            android:name=".Station_Booking"
+            android:exported="false" />
+        <activity
+            android:name=".Booking"
+            android:exported="false" />
+        <activity
+            android:name=".Login_page"
+            android:exported="false" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Dashboard"
+            android:exported="false" /> <!-- Configuration for OSMDroid -->
+        <meta-data
+            android:name="org.osmdroid.API_KEY"
+            android:value="default" /> <!-- Optional configuration for map cache location -->
+        <meta-data
+            android:name="org.osmdroid.BasePath"
+            android:value="osmdroid" />
+        <meta-data
+            android:name="org.osmdroid.CachePath"
+            android:value="osmdroid/cache" />
+    </application>
+
+</manifest>
